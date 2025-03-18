@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/webp" href="assets/faviconn.webp" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FOOD HOUSE</title>
+  </head>
+  <body>
+    <div class="hero">
+      <video
+        class="bgVideo"
+        autoplay
+        loop
+        muted
+        plays-inline
+        src="backgroundVideo/bgVideo2.mp4"
+        type="video/mp4"
+      ></video>
+
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/faviconn.webp" class="favicon" />FOOD HOUSE
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#services">OUR SERVICES</a></li>
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <script src="script.js"></script>
+
+      <div class="hero-content">
+        <h1 class="hero-heading">Welcome To Food House</h1>
+        <h2 class="hero-descriprion">Taste Local Flavours</h2>
+      </div>
+    </div>
+    <div class="our-services-section" id="services">
+      <h1 class="our-services-section-heading">Our Services</h1>
+      <div class="our-services-container cards-container">
+        <div class="our-services-card">
+          <img src="assets/catering.jpg" class="our-services-card-img" />
+          <h1 class="our-services-card-title">Event Catering</h1>
+          <p class="our-services-card-desription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            pariatur.
+          </p>
+        </div>
+        <div class="our-services-card">
+          <img src="assets/chefBlog.jpg" class="our-services-card-img" />
+          <h1 class="our-services-card-title">Chef's Blog</h1>
+          <p class="our-services-card-desription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            pariatur.
+          </p>
+        </div>
+        <div class="our-services-card">
+          <img src="assets/specialOffer1.jpg" class="our-services-card-img" />
+          <h1 class="our-services-card-title">Special Offers</h1>
+          <p class="our-services-card-desription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            pariatur.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="menu-section" id="menu">
+      <h1>Explore Menu</h1>
+      <div class="menu-section-container">
+        <div class="menu-section-cards">
+          <img src="assets/vegstartes1.jfif" class="menu-img" />
+          <p class="menu-title">Veg Starters</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/nonVegStarters.jpg" class="menu-img" />
+          <p class="menu-title">Non Veg Starters</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/soups2.jpg" class="menu-img" />
+          <p class="menu-title">Soups</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/fishfoods2.jpg" class="menu-img" />
+          <p class="menu-title">Sea Foods</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/maincourse.jpg" class="menu-img" />
+          <p class="menu-title">Main Course</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/noodles.jpg" class="menu-img" />
+          <p class="menu-title">Noodles</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/salads.jpg" class="menu-img" />
+          <p class="menu-title">Salads</p>
+        </div>
+        <div class="menu-section-cards">
+          <img src="assets/desserts.jpg" class="menu-img" />
+          <p class="menu-title">Desserts</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us-section" id="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-us-cards-container">
+        <div class="contact-us-cards"><img src="assets/twitter.jpg" /></div>
+        <div class="contact-us-cards"><img src="assets/pinterest.jpg" /></div>
+        <div class="contact-us-cards"><img src="assets/instagram1.jpg" /></div>
+
+        <div class="contact-us-cards">
+          <img src="assets/facebook.jpg" />
+        </div>
+
+        <div class="contact-us-cards"><img src="assets/yt.jpg" /></div>
+        <div class="contact-us-cards"><img src="assets/whatsapp.jpg" /></div>
+      </div>
+    </div>
+    <div class="footer-section">
+      <img class="resturant-logo" src="assets/faviconn.webp" />
+      <h2 class="resturant-title">FOOD HOUSE</h2>
+      <p class="email">orderfood@foodhouse.com</p>
+      <p class="address">534201 Bhimavaram, Andhra Pradesh, India</p>
+      <p class="credits-name">
+        Designed By
+        <span
+          ><a href="https://www.linkedin.com/in/bhuvan-anupoju " target="_blank"
+            >Bhuvan</a
+          ></span
+        >
+      </p>
+    </div>
+    <script>
+      const burger = document.querySelector(".burger");
+      const navLinks = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
